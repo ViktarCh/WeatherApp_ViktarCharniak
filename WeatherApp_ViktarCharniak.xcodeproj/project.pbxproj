@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09E812CEC5689C152F27DC2B /* Pods_WeatherApp_ViktarCharniak.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 156B5EE2877F0BD620C763D8 /* Pods_WeatherApp_ViktarCharniak.framework */; };
 		87A104342BE7DB53004A98EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A104332BE7DB53004A98EA /* AppDelegate.swift */; };
 		87A104362BE7DB53004A98EA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A104352BE7DB53004A98EA /* SceneDelegate.swift */; };
 		87A104382BE7DB53004A98EA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A104372BE7DB53004A98EA /* ViewController.swift */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		156B5EE2877F0BD620C763D8 /* Pods_WeatherApp_ViktarCharniak.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeatherApp_ViktarCharniak.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D098F705764DE6DE14EB572 /* Pods-WeatherApp_ViktarCharniak.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherApp_ViktarCharniak.release.xcconfig"; path = "Target Support Files/Pods-WeatherApp_ViktarCharniak/Pods-WeatherApp_ViktarCharniak.release.xcconfig"; sourceTree = "<group>"; };
 		87A104302BE7DB53004A98EA /* WeatherApp_ViktarCharniak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherApp_ViktarCharniak.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87A104332BE7DB53004A98EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		87A104352BE7DB53004A98EA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		87A1043C2BE7DB54004A98EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		87A1043F2BE7DB54004A98EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		87A104412BE7DB54004A98EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9DB4AEDA4225C9A0FB00A2AC /* Pods-WeatherApp_ViktarCharniak.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherApp_ViktarCharniak.debug.xcconfig"; path = "Target Support Files/Pods-WeatherApp_ViktarCharniak/Pods-WeatherApp_ViktarCharniak.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09E812CEC5689C152F27DC2B /* Pods_WeatherApp_ViktarCharniak.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4FFCB22BAA4991AE01CE3BA1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9DB4AEDA4225C9A0FB00A2AC /* Pods-WeatherApp_ViktarCharniak.debug.xcconfig */,
+				3D098F705764DE6DE14EB572 /* Pods-WeatherApp_ViktarCharniak.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		87A104272BE7DB53004A98EA = {
 			isa = PBXGroup;
 			children = (
 				87A104322BE7DB53004A98EA /* WeatherApp_ViktarCharniak */,
 				87A104312BE7DB53004A98EA /* Products */,
+				4FFCB22BAA4991AE01CE3BA1 /* Pods */,
+				9AD4048C74F27DEBA3E72836 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +84,14 @@
 			path = WeatherApp_ViktarCharniak;
 			sourceTree = "<group>";
 		};
+		9AD4048C74F27DEBA3E72836 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				156B5EE2877F0BD620C763D8 /* Pods_WeatherApp_ViktarCharniak.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 87A104442BE7DB54004A98EA /* Build configuration list for PBXNativeTarget "WeatherApp_ViktarCharniak" */;
 			buildPhases = (
+				141C87633324EDFBCCA8EF1E /* [CP] Check Pods Manifest.lock */,
 				87A1042C2BE7DB53004A98EA /* Sources */,
 				87A1042D2BE7DB53004A98EA /* Frameworks */,
 				87A1042E2BE7DB53004A98EA /* Resources */,
+				A7B067D9EFFDF1402BA98437 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		141C87633324EDFBCCA8EF1E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WeatherApp_ViktarCharniak-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A7B067D9EFFDF1402BA98437 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WeatherApp_ViktarCharniak/Pods-WeatherApp_ViktarCharniak-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WeatherApp_ViktarCharniak/Pods-WeatherApp_ViktarCharniak-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WeatherApp_ViktarCharniak/Pods-WeatherApp_ViktarCharniak-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		87A1042C2BE7DB53004A98EA /* Sources */ = {
@@ -287,6 +356,7 @@
 		};
 		87A104452BE7DB54004A98EA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9DB4AEDA4225C9A0FB00A2AC /* Pods-WeatherApp_ViktarCharniak.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -314,6 +384,7 @@
 		};
 		87A104462BE7DB54004A98EA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D098F705764DE6DE14EB572 /* Pods-WeatherApp_ViktarCharniak.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
