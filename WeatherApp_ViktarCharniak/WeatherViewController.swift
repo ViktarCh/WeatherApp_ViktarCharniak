@@ -100,10 +100,10 @@ final class WeatherViewController: UIViewController {
         dailyTempLimitsView.setup(
             DailyTempLimitsView.InputData(
                 weekMinTemp: 58,
-                weekMaxTemp: 77,
+                weekMaxTemp: 72,
                 dayMinTemp: 60,
-                dayMaxTemp: 75,
-                currentTemt: 65
+                dayMaxTemp: 66,
+                currentTemt: 63
             )
         )
         dailyTempLimitsView.snp.makeConstraints {make in
@@ -134,22 +134,22 @@ final class WeatherViewController: UIViewController {
             HourlyWeatherView.InputData(
                 hour: "3pm",
                 symbol: UIImage(systemName: "sun.max.fill")?.withRenderingMode(.alwaysOriginal),
-                temp: 65),
+                temp: 66),
             
             HourlyWeatherView.InputData(
                 hour: "4pm",
                 symbol: UIImage(systemName: "cloud.sun.fill")?.withRenderingMode(.alwaysOriginal),
-                temp: 64),
+                temp: 65),
             
             HourlyWeatherView.InputData(
                 hour: "5pm",
                 symbol: UIImage(systemName: "cloud.sun.fill")?.withRenderingMode(.alwaysOriginal),
-                temp: 63),
+                temp: 64),
             
             HourlyWeatherView.InputData(
                 hour: "6pm",
                 symbol: UIImage(systemName: "cloud.fill")?.withRenderingMode(.alwaysOriginal),
-                temp: 62),
+                temp: 63),
            
             HourlyWeatherView.InputData(
                 hour: "7pm",
