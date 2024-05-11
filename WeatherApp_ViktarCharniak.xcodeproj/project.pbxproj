@@ -13,6 +13,10 @@
 		87A1043D2BE7DB54004A98EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87A1043C2BE7DB54004A98EA /* Assets.xcassets */; };
 		87A104402BE7DB54004A98EA /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 87A1043F2BE7DB54004A98EA /* Base */; };
 		87A1044D2BE7E05E004A98EA /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A1044C2BE7E05E004A98EA /* WeatherViewController.swift */; };
+		87A104502BE80B8B004A98EA /* TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A1044F2BE80B8B004A98EA /* TitleView.swift */; };
+		87A104522BE80D31004A98EA /* BottomBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A104512BE80D31004A98EA /* BottomBarView.swift */; };
+		87D6001A2BEDD4C400D5F9FA /* DailyTempLimitsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D600192BEDD4C400D5F9FA /* DailyTempLimitsView.swift */; };
+		87D6001C2BEEE11D00D5F9FA /* HourlyWeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D6001B2BEEE11D00D5F9FA /* HourlyWeatherView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +29,10 @@
 		87A1043F2BE7DB54004A98EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		87A104412BE7DB54004A98EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		87A1044C2BE7E05E004A98EA /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WeatherViewController.swift; path = WeatherApp_ViktarCharniak/WeatherViewController.swift; sourceTree = "<group>"; };
+		87A1044F2BE80B8B004A98EA /* TitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleView.swift; sourceTree = "<group>"; };
+		87A104512BE80D31004A98EA /* BottomBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomBarView.swift; sourceTree = "<group>"; };
+		87D600192BEDD4C400D5F9FA /* DailyTempLimitsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyTempLimitsView.swift; sourceTree = "<group>"; };
+		87D6001B2BEEE11D00D5F9FA /* HourlyWeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourlyWeatherView.swift; sourceTree = "<group>"; };
 		9DB4AEDA4225C9A0FB00A2AC /* Pods-WeatherApp_ViktarCharniak.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherApp_ViktarCharniak.debug.xcconfig"; path = "Target Support Files/Pods-WeatherApp_ViktarCharniak/Pods-WeatherApp_ViktarCharniak.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -84,9 +92,21 @@
 			isa = PBXGroup;
 			children = (
 				87A1044C2BE7E05E004A98EA /* WeatherViewController.swift */,
+				87A1044E2BE80A33004A98EA /* Views */,
 			);
 			name = WeatherViewController;
 			path = ..;
+			sourceTree = "<group>";
+		};
+		87A1044E2BE80A33004A98EA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				87A1044F2BE80B8B004A98EA /* TitleView.swift */,
+				87A104512BE80D31004A98EA /* BottomBarView.swift */,
+				87D600192BEDD4C400D5F9FA /* DailyTempLimitsView.swift */,
+				87D6001B2BEEE11D00D5F9FA /* HourlyWeatherView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		9AD4048C74F27DEBA3E72836 /* Frameworks */ = {
@@ -211,9 +231,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87D6001A2BEDD4C400D5F9FA /* DailyTempLimitsView.swift in Sources */,
 				87A1044D2BE7E05E004A98EA /* WeatherViewController.swift in Sources */,
 				87A104342BE7DB53004A98EA /* AppDelegate.swift in Sources */,
 				87A104362BE7DB53004A98EA /* SceneDelegate.swift in Sources */,
+				87A104522BE80D31004A98EA /* BottomBarView.swift in Sources */,
+				87A104502BE80B8B004A98EA /* TitleView.swift in Sources */,
+				87D6001C2BEEE11D00D5F9FA /* HourlyWeatherView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
