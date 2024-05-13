@@ -10,10 +10,13 @@
 		09E812CEC5689C152F27DC2B /* Pods_WeatherApp_ViktarCharniak.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 156B5EE2877F0BD620C763D8 /* Pods_WeatherApp_ViktarCharniak.framework */; };
 		87A104342BE7DB53004A98EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A104332BE7DB53004A98EA /* AppDelegate.swift */; };
 		87A104362BE7DB53004A98EA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A104352BE7DB53004A98EA /* SceneDelegate.swift */; };
-		87A104382BE7DB53004A98EA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A104372BE7DB53004A98EA /* ViewController.swift */; };
-		87A1043B2BE7DB53004A98EA /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 87A1043A2BE7DB53004A98EA /* Base */; };
 		87A1043D2BE7DB54004A98EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87A1043C2BE7DB54004A98EA /* Assets.xcassets */; };
 		87A104402BE7DB54004A98EA /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 87A1043F2BE7DB54004A98EA /* Base */; };
+		87A1044D2BE7E05E004A98EA /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A1044C2BE7E05E004A98EA /* WeatherViewController.swift */; };
+		87A104502BE80B8B004A98EA /* TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A1044F2BE80B8B004A98EA /* TitleView.swift */; };
+		87A104522BE80D31004A98EA /* BottomBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A104512BE80D31004A98EA /* BottomBarView.swift */; };
+		87D6001A2BEDD4C400D5F9FA /* DailyTempLimitsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D600192BEDD4C400D5F9FA /* DailyTempLimitsView.swift */; };
+		87D6001C2BEEE11D00D5F9FA /* HourlyWeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D6001B2BEEE11D00D5F9FA /* HourlyWeatherView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,11 +25,14 @@
 		87A104302BE7DB53004A98EA /* WeatherApp_ViktarCharniak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherApp_ViktarCharniak.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87A104332BE7DB53004A98EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		87A104352BE7DB53004A98EA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		87A104372BE7DB53004A98EA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		87A1043A2BE7DB53004A98EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		87A1043C2BE7DB54004A98EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		87A1043F2BE7DB54004A98EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		87A104412BE7DB54004A98EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87A1044C2BE7E05E004A98EA /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WeatherViewController.swift; path = WeatherApp_ViktarCharniak/WeatherViewController.swift; sourceTree = "<group>"; };
+		87A1044F2BE80B8B004A98EA /* TitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleView.swift; sourceTree = "<group>"; };
+		87A104512BE80D31004A98EA /* BottomBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomBarView.swift; sourceTree = "<group>"; };
+		87D600192BEDD4C400D5F9FA /* DailyTempLimitsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyTempLimitsView.swift; sourceTree = "<group>"; };
+		87D6001B2BEEE11D00D5F9FA /* HourlyWeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourlyWeatherView.swift; sourceTree = "<group>"; };
 		9DB4AEDA4225C9A0FB00A2AC /* Pods-WeatherApp_ViktarCharniak.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherApp_ViktarCharniak.debug.xcconfig"; path = "Target Support Files/Pods-WeatherApp_ViktarCharniak/Pods-WeatherApp_ViktarCharniak.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -48,7 +54,6 @@
 				9DB4AEDA4225C9A0FB00A2AC /* Pods-WeatherApp_ViktarCharniak.debug.xcconfig */,
 				3D098F705764DE6DE14EB572 /* Pods-WeatherApp_ViktarCharniak.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -75,13 +80,33 @@
 			children = (
 				87A104332BE7DB53004A98EA /* AppDelegate.swift */,
 				87A104352BE7DB53004A98EA /* SceneDelegate.swift */,
-				87A104372BE7DB53004A98EA /* ViewController.swift */,
-				87A104392BE7DB53004A98EA /* Main.storyboard */,
+				87A104472BE7DF9D004A98EA /* WeatherViewController */,
 				87A1043C2BE7DB54004A98EA /* Assets.xcassets */,
 				87A1043E2BE7DB54004A98EA /* LaunchScreen.storyboard */,
 				87A104412BE7DB54004A98EA /* Info.plist */,
 			);
 			path = WeatherApp_ViktarCharniak;
+			sourceTree = "<group>";
+		};
+		87A104472BE7DF9D004A98EA /* WeatherViewController */ = {
+			isa = PBXGroup;
+			children = (
+				87A1044C2BE7E05E004A98EA /* WeatherViewController.swift */,
+				87A1044E2BE80A33004A98EA /* Views */,
+			);
+			name = WeatherViewController;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		87A1044E2BE80A33004A98EA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				87A1044F2BE80B8B004A98EA /* TitleView.swift */,
+				87A104512BE80D31004A98EA /* BottomBarView.swift */,
+				87D600192BEDD4C400D5F9FA /* DailyTempLimitsView.swift */,
+				87D6001B2BEEE11D00D5F9FA /* HourlyWeatherView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		9AD4048C74F27DEBA3E72836 /* Frameworks */ = {
@@ -154,7 +179,6 @@
 			files = (
 				87A1043D2BE7DB54004A98EA /* Assets.xcassets in Resources */,
 				87A104402BE7DB54004A98EA /* Base in Resources */,
-				87A1043B2BE7DB53004A98EA /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,23 +231,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				87A104382BE7DB53004A98EA /* ViewController.swift in Sources */,
+				87D6001A2BEDD4C400D5F9FA /* DailyTempLimitsView.swift in Sources */,
+				87A1044D2BE7E05E004A98EA /* WeatherViewController.swift in Sources */,
 				87A104342BE7DB53004A98EA /* AppDelegate.swift in Sources */,
 				87A104362BE7DB53004A98EA /* SceneDelegate.swift in Sources */,
+				87A104522BE80D31004A98EA /* BottomBarView.swift in Sources */,
+				87A104502BE80B8B004A98EA /* TitleView.swift in Sources */,
+				87D6001C2BEEE11D00D5F9FA /* HourlyWeatherView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		87A104392BE7DB53004A98EA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				87A1043A2BE7DB53004A98EA /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		87A1043E2BE7DB54004A98EA /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -362,11 +382,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = WeatherApp_ViktarCharniak/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -390,11 +411,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = WeatherApp_ViktarCharniak/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
